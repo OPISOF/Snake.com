@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+	padding: 0;    
+}
+
+.game_window {
+    margin: auto;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 720px;
+    height: 480px;
+    border-radius: 20px;
+    background: white;
+}
+
+canvas.game_canvas {
+    width: 720px;
+    height: 480px;
+    border-radius: 20px;
+    background: white;
+    display: block;
+}
+
+.gradient {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 750px;
+    height: 510px;
+    border-radius: 20px;
+    background: linear-gradient(red, orange, yellow, green, blue, violet);
+}
+
+html, body, .block {
+    height: 100%;
+    width: 100%;
+}
+
+.block{
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.start-btn {
+    margin: auto;
+    width: 125px;
+    height: 40px;
+    border-radius: 50px;
+    background: black;
+    border: none;
+    cursor: pointer;
+}
+
+.start-text {
+    color: white;
+    margin: auto;
+    text-align: center;
+}
+
+.display-none {
+    display: none;
+}
+
+.lost {
+    margin: auto;
+    text-align: center;
+    color: #450d0d;
+}
+
+.fade-in-text {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+.fade-out {
+  animation: fadeOut 0.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
