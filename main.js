@@ -90,13 +90,13 @@ function game_start() {
         if (code === 'KeyS' && head_direction !== 'UP') {
             head_direction = 'DOWN';
         }
-        if (code === 'KeyW' && head_direction !== 'DOWN') {
+        else if (code === 'KeyW' && head_direction !== 'DOWN') {
             head_direction = 'UP';
         }
-        if (code === 'KeyD' && head_direction !== 'LEFT') {
+        else if (code === 'KeyD' && head_direction !== 'LEFT') {
             head_direction = 'RIGHT';
         }
-        if (code === 'KeyA' && head_direction !== 'RIGHT') {
+        else if (code === 'KeyA' && head_direction !== 'RIGHT') {
             head_direction = 'LEFT';
         }
     });
